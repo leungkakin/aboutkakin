@@ -26,7 +26,7 @@ function NavBar() {
             sx={{ flexGrow: 1 }}
             color="common.black"
           >
-            {currentUrl === "http://localhost:3000/projects" ? (
+            {currentUrl.includes("projects") === true ? (
               <ArrowBackIcon id="toHome" onClick={goToHome} />
             ) : (
               <div></div>
